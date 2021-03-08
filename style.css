@@ -138,6 +138,10 @@ li.active>#film {
     height: auto;
 }
 
+.img1 {
+    max-width: 100%;
+}
+
 .searchbox {
     display: inline-flex
 }
@@ -286,7 +290,7 @@ ul {
 
 .navbar-local {
     padding: 0;
-    background-color: black;
+    background-color: rgb(204, 204, 202);
 }
 
 .navbar-brand {
