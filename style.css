@@ -27,17 +27,19 @@ a {
 
 .searchbox-input {
     display: none;
-    height: 1em;
+    height: 1.5em;
+    width: 8em;
 }
 
 .searchbox-icon {
     color: rgb(204, 204, 202);
+    margin-top: 3px;
 }
 
 .navbar-brand {
     margin-right: 30em;
-    margin-left: 1em;
-    margin-top: 0.8em;
+    margin-left: 1.4em;
+    margin-top: inherit;
     font-weight: 700;
     font-size: 28px;
 }
@@ -97,6 +99,30 @@ a {
     color: rgb(234, 0, 255) !important;
 }
 
+li.active>#teater {
+    color: green !important;
+}
+
+li.active>#dans {
+    color: red !important;
+}
+
+li.active>#konst {
+    color: rgb(255, 115, 0) !important;
+}
+
+li.active>#literatur {
+    color: rgb(255, 238, 0) !important;
+}
+
+li.active>#musik {
+    color: rgb(17, 0, 255) !important;
+}
+
+li.active>#film {
+    color: rgb(234, 0, 255) !important;
+}
+
 .headContent {
     background: url(slide1.jpg);
     background-repeat: no-repeat;
@@ -107,6 +133,11 @@ a {
     background-position: 0 -5em;
 }
 
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
 .searchbox {
     display: inline-flex
 }
@@ -114,7 +145,7 @@ a {
 .devider {
     width: 100%;
     background-color: rgb(204, 204, 202);
-    height: 5em;
+    height: 3.5em;
     text-align: center;
     width: 100%;
     margin: auto;
@@ -132,28 +163,28 @@ a {
     height: 18em;
 }
 
-#devider-title {
-    padding: 0.9em 0;
+#devider1-title {
+    padding: 10px;
 }
 
-#item1 {
-    background-image: url("images/post1.png");
+#devider2-title {
+    padding: 10px;
 }
 
-#item2 {
-    background-image: url("images/post2.png");
+#devider3-title {
+    padding: 10px;
 }
 
-#item3 {
-    background-image: url("images/post3.png");
+#devider4-title {
+    padding: 10px;
 }
 
-#item4 {
-    background-image: url("images/post4.png");
+#devider5-title {
+    padding: 10px;
 }
 
-#item5 {
-    background-image: url("images/post5.png");
+#devider6-title {
+    padding: 10px;
 }
 
 .scrollToTopBtn {
@@ -191,7 +222,6 @@ a {
     background: black;
     color: rgb(204, 204, 202);
     bottom: 0;
-    height: 15em;
     position: relative;
     text-align: center;
 }
@@ -204,12 +234,10 @@ a {
 
 footer {
     background: rgb(204, 204, 202);
-    height: 1.2em;
 }
 
 .footer {
     display: inline-flex;
-    width: 25%;
     margin-left: 30%;
     align-items: baseline;
     padding: 12px;
@@ -220,18 +248,23 @@ ul {
 }
 
 .abonnera-input {
-    height: 1em;
-    margin-left: 1em;
+    height: 1.5em;
+}
+
+.abonera-label {
+    margin: 0 5px 0 0;
 }
 
 .abon {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.abone {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+@media only screen and (max-width: 600px) {
+    .abon {
+        flex-direction: column;
+    }
 }
 
 .icon1 {
@@ -251,10 +284,33 @@ ul {
     align-items: center;
 }
 
-.navbar {
+.navbar-local {
+    padding: 0;
     background-color: black;
 }
 
 .navbar-brand {
     text-decoration: bold;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.pictures {
+    margin: inherit;
+    padding: 0;
+}
+
+.pictures-row {
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .pictures {
+        padding: 0;
+    }
+    .pictures-row {
+        display: block;
+    }
 }
